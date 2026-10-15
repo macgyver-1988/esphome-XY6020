@@ -22,6 +22,7 @@ sensor:
   
   - platform: modbus_controller
     name: "${VOUT}"
+    id: modbus_spannung_ist
     address: 0x02
     register_type: "holding"
     value_type: U_WORD
@@ -32,6 +33,7 @@ sensor:
 
   - platform: modbus_controller
     name: "${IOUT}"
+    id: modbus_strom_ist
     address: 0x03
     register_type: "holding"
     value_type: U_WORD
